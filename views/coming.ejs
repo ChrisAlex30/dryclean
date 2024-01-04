@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLEANCO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Poppins:wght@400;500&family=Ubuntu:wght@500&display=swap');
+    .newsletter-area{
+        font-family: 'Ubuntu',sans-serif;
+        margin-top: 39px;
+       
+    }
+    body{
+        background-color: #EBF5FE;
+    }
+   .line{
+    font-size: 70px;
+   }
+        
+    .write{
+        padding-top: 14em;
+    }
+    .pho{
+        padding-top: 5em
+    }
+    
+    @media screen and (max-width:768px) 
+    {
+        .write{
+        padding-top: 0em;
+    }
+    .pho{
+        padding-top: 0em;
+    }   
+    }
+        .small {
+            display: none !important;
+        }
+    
+    
+    
+    
+    
+    
+    
+        .has-line {
+            padding-left: 100px;
+            position: relative;
+            font-size: 27px;
+        }
+    
+        .has-line::before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 0;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background-color: #333333;
+            width: 88px;
+            height: 2px;
+        }
+    
+        .group {
+            margin-top: 30px;
+            position: relative;
+        }
+    
+    
+    
+        .group a {
+            width: 149px;
+            height: 51px;
+            border: 1px solid #FE5757;
+            border-radius: 40px;
+            background-color: #FE5757;
+            color: #fff !important;
+            font-size: 20px;
+            font-weight: 500;
+            position: absolute;
+            top: 0px;
+            padding-left: 9px;
+            padding-top: 8px;
+            cursor: pointer;
+    
+        }
+    
+        .group a:hover {
+            filter: drop-shadow(10px 10px 10px black);
+        }
+    
+        @media (max-width: 420px) {
+            .im {
+                margin-top: 6em !important;
+            }
+    
+            .back {
+                background-image: none !important;
+                display: block !important;
+            }
+    
+            .small {
+                display: block !important;
+            }
+    
+    
+            .group a {
+                
+        height: 56px;
+        width: 148px;
+        margin-left: 5.2em;
+            }
+    
+            .group a:hover {
+                filter: drop-shadow(10px 10px 10px black);
+            }
+    
+            .has-line {
+                text-align: center;
+                padding: 0;
+                font-size: 2em;
+            }
+    
+            .has-line::before {
+                display: none;
+            }
+    
+            .linebig {
+                text-align: center;
+            }
+    
+    
+           
+        }
+    
+        @media only screen and (min-width: 420px) and (max-width: 574px) {
+            .back {
+                background-image: none !important;
+                display: block !important;
+            }
+    
+    
+            .group a {
+                height: 50px;
+                width: 130px;
+    
+            }
+    
+            .has-line {
+                text-align: center;
+                padding: 0;
+            }
+    
+            .has-line::before {
+                display: none;
+            }
+    
+            .linebig {
+                text-align: center;
+            }
+    
+           
+        }
+    
+        @media (min-width: 575px) and (max-width: 767px) {
+            .back {
+                background-image: none !important;
+                display: block !important;
+            }
+    
+    
+            .group a {
+                height: 50px;
+                width: 130px;
+                right: 0;
+            }
+    
+            .has-line {
+                text-align: center;
+                padding: 0;
+            }
+    
+            .has-line::before {
+                display: none;
+            }
+    
+            .linebig {
+                text-align: center;
+            }
+    
+            .newsletter-area {
+                padding-top: 150px;
+                margin-bottom: 50px;
+            }
+        }
+    
+    
+        @media (min-width: 768px) and (max-width: 991px) {
+            .back {
+                background-image: none !important;
+            }
+    
+    
+            .group a {
+                height: 55px;
+                right: 0;
+            }
+    
+            .has-line {
+                text-align: center;
+                padding: 0;
+            }
+    
+            .has-line::before {
+                display: none;
+            }
+    
+            .linesmall {
+                font-size: 18px !important;
+            }
+    
+            .linebig {
+                margin: 0 auto;
+                max-width: 540px !important;
+                text-align: center;
+                font-size: 60px !important;
+                line-height: 68px !important;
+            }
+        }
+    
+    
+        @media (min-width: 992px) and (max-width: 1200px) {
+            .group a {
+                /* right: 0 !important; */
+                height: 60px;
+            }
+    
+        }
+    
+        @media (min-width: 1201px) and (max-width: 1399px) {
+            /* .group a {
+                right: 0 !important;
+            } */
+    
+        }
+    
+        /* body {
+    font-family: 'Poppins', sans-serif;
+    } */
+    
+        .linebig,
+        .linesmall {
+            color: #08056C;
+        }
+    
+        .linebig {
+            font-size: 69px;
+            line-height: 76px;
+            font-weight: 700;
+            max-width: 810px;
+        }
+    
+        .linesmall {
+            font-size: 32px;
+            font-weight: 500;
+        }
+    
+        @media (max-width: 767px) {
+            .linebig {
+                font-size: 32px;
+                line-height: 40px;
+            }
+    
+            .linesmall {
+                font-size: 16px;
+            }
+        }
+    
+        @media (min-width: 992px) and (max-width: 1200px) {
+            .linebig {
+                font-size: 46px;
+                line-height: 44px;
+            }
+    
+            .linesmall {
+                font-size: 20px;
+            }
+        }
+    
+        /* * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+    } */
+    
+        html {
+            scroll-behavior: smooth;
+        }
+    
+        img {
+            border: 0;
+            outline: 0;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+    
+        /* body {
+    position: relative;
+    } */
+        /*# sourceMappingURL=main.css.map */
+    </style>
+</head>
+<body>
+    
+    <section class="back" style="margin-top:-5em;">
+
+
+        <!-- News Letter Starts Here -->
+        <section class="newsletter-area">
+            <div class="container" style="background-color: #EBF5FE;">
+                 <img src="img/coming2.jpg" alt="img" class="img-fluid w-100 mt-5">
+                 <h1 class=" linesmall text-center mt-5" style="font-size:27px;">Best Laundry & Dry Cleaning Service in your area.</h1>
+                        <h1 class=" line text-center fw-bold" style="color: navy;">Coming Very Soon</h1>
+
+                        
+               
+            </div>
+        </section>
+       
+    </section>
+</body>
+</html>
+
+
+
+</head>
+
