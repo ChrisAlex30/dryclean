@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  
+}
+.navbar{
+  background-color: white;
+ 
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  background: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.363);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color:black;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  font-family: "Muli",sans-serif;
+  color: #0d2d3e;
+    font-weight: 700;
+    padding: 33px 21px;
+    font-size: 17px;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+
+.iconbig{
+  transition: 0.5s all ease;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.iconbig:hover{
+  transform: scale(1.1);
+  background-color: white;
+  border-radius: 50%;
+  
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.logspan{
+  width: 12%;
+}
+
+.phonegif{
+  width: 50%;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+.phonegif{
+  width: 20%;
+}
+
+.footer-area{
+  text-align: center;
+}
+.callus{
+  text-align: center;
+}
+
+  .logspan{
+    width: 30%;
+  }
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #6785FF;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    color: white;
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
+
+
+
+
+.bubbles{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+}
+.bubbles img{
+    width: 3em;
+    opacity: 0;
+    animation: mybubble 5000ms linear infinite;
+}
+@keyframes mybubble{
+    0%{
+        transform: translateY(0) ;
+        opacity: 0;
+    }
+    25%{
+        opacity:1;  
+    }
+    50%{
+        opacity: 1; 
+    }
+    75%{
+        opacity: 0; 
+    }
+    100%{
+        transform:  translateY(-38em);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 0s;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 5s;
+}
+
+
+
+.ocean {
+  height: 100%;
+  background: #0077ff; /* Blue for the ocean */
+  position: relative;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 100px;
+  bottom: 0;
+  left: 50%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)); /* Gradient for the wave */
+  animation: wave 4s infinite linear;
+  transform: translateX(-50%);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-50%) translatey(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-25px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0) rotate(0deg);
+  }
+}
+
+.custom-shape-divider-top-1630622741 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(0deg);
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1630622741 svg {
+  position: relative;
+  display: block;
+  /* width: calc(123% + 1.3px); */
+  width: 200%;
+  height: 550px;
+  animation: shape 14s ease-in-out infinite;
+}
+
+@keyframes shape {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -60%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.custom-shape-divider-top-1630622741 .shape-fill {
+  fill: #E8EDFF;
+}
+
+
+.cont {
+  width: 350px;
+  height: 357px;
+  perspective: 800px;
+}
+
+.cont:hover > .car{
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.car {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+
+
+.back {
+  background-color: #6785FF;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}

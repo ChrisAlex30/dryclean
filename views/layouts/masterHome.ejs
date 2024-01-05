@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+      <%- title %>
+  </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="shortcut icon" type="image/x-icon" href="img/logoicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animated-headline.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="mycss/mystyle.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar mb-5">
+            
+                <span class="logspan"><a href="/">
+                    <img src="img/logo/logo.png" alt="" style="width: 98%;filter: drop-shadow(2px 2px 0px rgb(163, 163, 243));" class="mx-4">
+                </a>   
+                </span>           
+            <div class="content">
+              
+              <ul class="menu-list">
+                <div class="icon cancel-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+                <li><a href="/">Home</a></li>
+                <li><a href="/aboutus">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+              <div class="icon menu-btn">
+                <i class="fas fa-bars text-dark"></i>
+                
+              </div>
+            </div>
+            <div class="header-right d-none d-lg-block">
+                <a href="#" class="header-btn1"><img src="img/icon/call.png" alt=""> (+91) 123456789</a>
+            </div>
+          </nav>
+    </header>
+    
+    <main>
+        
+      <%- body %>
+       
+    </main>
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-area" >
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                     <div class="single-footer-caption mb-50">
+                       <div class="single-footer-caption mb-30">
+                        <!-- logo -->
+                        <div class="footer-logo mb-35">
+                            <a href="index.html"><img src="img/logo/logo.png" alt="" style="width: 30%;"></a>
+                        </div>
+                        <div class="footer-tittle">
+                            <div class="footer-pera">
+                                <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+                            </div>
+                        </div>
+                        <!-- social -->
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                    <div class="footer-tittle">
+                        <h4>Services </h4>
+                        <ul>
+                            <li><a href="/">- Dry Cleaning</a></li>
+                            <li><a href="/">- Dry Clean</a></li>
+                            <li><a href="/">- Ironing Services</a></li>
+                            <li><a href="/">- Laundry Service Lucknow</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                    <div class="footer-tittle">
+                        <h4>Get in touch</h4>
+                        <ul>
+                            <li class="number"><a href="#">(+91) 123456789</a></li>
+                            <li><a href="#">example@123.com</a></li>
+                            <li><a href="#">789/A, Palk road NYC-9089</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="bottom-bt">
+                    <img src="img/gallery/company-bg.png" alt="">
+                </div>
+            </div>
+        </div>
+         
+    </div>
+   
+</div>
+
+
+
+
+  <!-- Footer End-->
+</footer>
+
+
+
+
+
+    <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+
+<!-- JQUERY CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
