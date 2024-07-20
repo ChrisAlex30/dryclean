@@ -50,7 +50,7 @@
     color: #6785FF !important;
     display: inline-block;
     padding: 18px 44px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 700;
     border: 0;
@@ -129,7 +129,7 @@
 }
 
 body {
-    font-family: "Muli", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px
@@ -141,7 +141,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #072366;
     margin-top: 0px;
     font-style: normal;
@@ -150,7 +150,7 @@ h6 {
 }
 
 p {
-    font-family: "Muli", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #10285d;
     font-size: 16px;
     line-height: 30px;
@@ -404,7 +404,7 @@ hr {
     font-size: 18px;
     background-size: 200%;
     transition: 0.6s;
-    background-image: linear-gradient(to left, #6785FF, #5172f5, #6785FF);
+    background-color: #e40000;
     background-position: right
 }
 
@@ -421,7 +421,9 @@ hr {
 }
 
 .btn:hover {
-    background-position: left
+    background-position: left;
+background-color: rgb(253, 64, 64);
+color: white;
 }
 
 .btn2 {
@@ -2550,7 +2552,7 @@ hr {
     font-size: 33px;
     font-weight: 500;
     margin-bottom: 22px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
    
     color: white;
     text-transform: capitalize;
@@ -2766,9 +2768,9 @@ hr {
 }
 
 .main-header .header-left .main-menu ul li a {
-    font-family: "Muli", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #0d2d3e;
-    font-weight: 700;
+    font-weight: 500;
     padding: 33px 21px;
     display: block;
     font-size: 16px;
@@ -2920,12 +2922,12 @@ hr {
 }
 
 .slider-height {
-    height: 765px
+    height: 620px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .slider-height {
-        height: 765px
+        height: 620px
     }
 }
 
@@ -2972,7 +2974,7 @@ hr {
 
 .slider-area {
     margin-top: -1px;
-    background-image: url(../img/hero/h1_hero1.png);
+    background-image: url(../img/hero/h1_hero1.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover
@@ -2983,13 +2985,13 @@ hr {
 }
 
 .slider-area .hero__caption span {
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     display: block
 }
 
 .slider-area .hero__caption h1 {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 14px;
     color: #fff;
@@ -3028,9 +3030,10 @@ hr {
 }
 
 .slider-area .hero__caption p {
-    font-size: 27px;
+    font-size: 20px;
     color: #fff;
-    font-family: "Muli", sans-serif;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
     margin-bottom: 50px
 }
 
@@ -3997,7 +4000,7 @@ hr {
     color: #3a3a3a;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #3a3a3a
 }
 
@@ -5258,14 +5261,13 @@ hr {
 }
 
 .form-contact .form-control {
-    border: 2px solid #e5e6e9;
-    border-radius: 20px;
+    border: 2px solid #49505770;
+    border-radius: 6px;
     height: 48px;
     padding-left: 18px;
     font-size: 16px;
     font-weight: 500;
-   background: transparent;
-
+    background: #fdfbfb;
 }
 
 .form-contact .form-control:focus {
@@ -5385,7 +5387,7 @@ hr {
     color: #fff;
     font-weight: 900;
     margin-bottom: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: capitalize
 }
 
@@ -5444,7 +5446,7 @@ hr {
     cursor: pointer;
     display: block;
     float: left;
-    font-family: "Muli", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: normal;
     width: 100% !important;
     line-height: 50px;

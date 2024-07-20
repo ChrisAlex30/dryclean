@@ -23,7 +23,7 @@
  
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
   padding: 10px 0;
   transition: all 0.3s ease;
 }
@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 6rem;
 }
 .navbar .logo a{
   color:black;
@@ -50,9 +51,9 @@
   list-style: none;
 }
 .menu-list li a{
-  font-family: "Muli",sans-serif;
+  font-family: "Poppins",sans-serif;
   color: #0d2d3e;
-    font-weight: 700;
+    font-weight: 500;
     padding: 33px 21px;
     font-size: 17px;
   margin-left: 25px;
@@ -60,7 +61,7 @@
   transition: all 0.3s ease;
 }
 .menu-list li a:hover{
-  color: #007bff;
+  color: #e40000;
 }
 
 .iconbig{
@@ -88,7 +89,7 @@
 }
 
 .logspan{
-  width: 12%;
+  width: 14%;
 }
 
 .phonegif{
@@ -143,7 +144,7 @@
     display: block;
     padding: 40px 0;
     text-align: center;
-    background: #6785FF;
+    background: #e40000;
     transition: all 0.3s ease;
   }
   .navbar.show .menu-list{
@@ -333,3 +334,494 @@
   align-items: center;
   gap: 5rem;
 }
+
+
+
+/* about us */
+
+.text-danger {
+  color: #c4292d !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.shadow-sm {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.position-relative .ellipse {
+  width: 800px;
+  height: 600px;
+  background-color: #c4292d1a;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-12%, -10%);
+  z-index: -1;
+}
+
+.cleancoimage{
+  top: 44px;
+    left: 224px;
+    width: 83%;
+}
+
+.position-relative img {
+  z-index: 2;
+}
+
+.ellipse-2 {
+  width: 124px;
+  height: 126px;
+  background-color: #c4292d;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-67%, 276%);
+  z-index: 3;
+}
+
+.ellipse-2 .exp{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.ellipse-2 .text-center {
+  position: absolute;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.heading{
+  font-family: 'Poppins',sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.subheading{
+  font-family: 'Poppins',sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.marg{
+  margin-top: 9rem;
+}
+
+.call-icon{
+  padding: 9px;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 2px grey);
+}
+
+.details{
+  width: 112%;
+}
+
+.number{
+  font-weight: 600;
+  font-family: 'Poppins',sans-serif;
+
+}
+
+.carddetails{
+  margin-top: 34px !important;
+  width: 223% !important;
+  justify-content: space-evenly;
+}
+
+.cardsheading{
+  font-weight:600 ;
+  font-family: 'Poppins',sans-serif;
+  font-size: 17px;
+}
+
+.cardborder{
+    background-color: white;
+    filter: drop-shadow(2px 2px 2px grey);
+    border-radius: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.cardpara{
+  font-size: 15px;
+}
+
+.services{
+  background-color: #f9e9ea;
+  margin-top: 114px  !important;
+}
+
+.mainhead{
+  line-height: 48px;
+}
+
+.bigscreenservices{
+  width: 85%;
+  margin: auto;
+}
+
+.carousel{
+  margin-top: 60px !important;
+}
+
+
+.howework-btn{
+  border: none;
+    padding: 16px 40px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    background-size: 200%;
+    transition: 0.6s;
+    background-color: #e40000;
+    background-position: right;
+}
+
+.space{
+  padding-top: 70px;
+}
+
+
+
+.carellipse {
+  width: 800px;
+  height: 500px;
+  background-color: #c4292d1a;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-102%, -6%);
+  z-index: -1;
+}
+
+.carimage{
+  top: 82px;
+    left: -142px;
+    width: 100%;
+}
+
+.footermarg{
+  margin-top: 219px;
+}
+
+.lastno{
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+}
+
+.lastcardiv{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.imagewidthlocations{
+  width: 75%;
+}
+
+.locationrow{
+  padding-left:50px;
+  padding-right: 50px;
+}
+.textalign{
+  text-align: right;
+}
+
+.logoimage{
+  width: 100%; 
+  margin-left: 9rem;
+}
+.bigscreencarousel{
+  display: block;
+}
+.smallscreencarousel{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .subheading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+  .heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .carddetails {
+    width: 100% !important;
+    margin: auto;
+    /* margin-top: 34px !important; */
+    /* width: 123% !important; */
+    justify-content: space-evenly;
+}
+
+.position-relative .ellipse {
+  width: 800px;
+  height: 600px;
+  background-color: #c4292d1a;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-106%, -9%);
+  z-index: -1;
+}
+
+.cleancoimage {
+  top: 44px;
+  left: 0px;
+  width: 100%;
+}
+
+.ellipse-2 {
+  width: 124px;
+  height: 126px;
+  background-color: #c4292d;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-113%, 213%);
+  z-index: 3;
+  
+}
+
+.services {
+  background-color: #f9e9ea;
+  margin-top: 486px !important;
+}
+
+.mainrow{
+  margin: auto !important;
+}
+.line{
+  display: none;
+}
+.mainhead {
+  line-height: 32px;
+}
+.services {
+  background-color: #f9e9ea;
+  margin-top: 482px !important;
+}
+.location {
+  background-color: #f9e9ea;
+  margin-top: 32px !important;
+}
+.textalign{
+  text-align: center;
+}
+.deliveryrow{
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+.imagewidthlocations{
+  width: 100%;
+}
+.locationrow{
+  padding: 0px;
+}
+.bigscreencarousel{
+  display: none;
+}
+.smallscreencarousel{
+  display: block;
+  width: 90%;
+}
+
+.logoimage {
+  width: 98% !important;
+  margin-left: 3rem !important;
+}
+
+.footermarg {
+  margin-top: 418px;
+}
+
+.aboutimage {
+  top: 83px !important;
+  left: 21px !important;
+  width: 88%;
+}
+.aboutrow{
+  margin-top: 449px !important;
+  text-align: center;
+}
+.rowcols{
+  margin-bottom: 3rem;
+}
+.aboutfeatures{
+  background-color: #f9e9ea;
+  margin-top: 50px !important;
+}
+.iconfeature{
+  text-align: left !important;
+  margin-bottom: 2rem;
+  }
+.servicedetails{
+  margin-bottom: 20px !important;
+}
+
+.contactcols{
+  margin-bottom: 35px;
+}
+  .contactimage{
+    display: none;
+  }
+  .getin-form{
+    background-color: white;
+    border-radius: 12px 12px 12px 12px !important;
+  }
+  .contactform{
+    margin-top: 2rem !important;
+  }
+}
+
+.servicehead{
+  margin-top: 15px;
+  font-size: 25px;
+    font-weight: 600;
+}
+
+
+.aboutfeatures{
+ 
+    background-color: #f9e9ea;
+    margin-top: 103px;
+}
+
+
+.aboutimage{
+  top: 51px;
+  left: -106px;
+  width: 88%;
+}
+
+.aboutrow{
+  margin-top: 3rem;
+}
+
+
+.marg {
+  margin-top: 9rem;
+}
+
+.marg1 {
+  margin-top: 3rem;
+}
+
+.location {
+  background-color: #f9e9ea;
+  margin-top: 32px !important;
+}
+
+.howework-btn {
+  border: none;
+  padding: 10px 24px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  background-size: 200%;
+  transition: 0.6s;
+  background-color: #e40000;
+  background-position: right;
+}
+
+.carousel {
+  margin-top: 22px !important;
+}
+
+.carimage {
+  top: 82px;
+  left: 0px;
+  width: 100%;
+}
+.mar{
+  margin-top: 2rem;
+}
+.lastcardiv {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.textalign{
+  text-align: right;
+}
+.logoimage{
+  width: 30% ;
+  margin-left: 9rem;
+}
+.logspan{
+  width: 45%;
+}
+
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+.spanheading{
+  
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.featureheading{
+  
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+.width{
+  width: 60%;
+}
+
+.iconfeature{
+text-align: right;
+}
+
+.featuredetails{
+  text-align: left;
+}
+
+
+
+
+
+
+
+/* about us ends */
+
+

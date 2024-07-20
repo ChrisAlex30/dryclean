@@ -4,7 +4,7 @@ const app= express()
 
 app.set('view engine','ejs')
 app.use(express.static("public"));
-const port = 2100;
+const port = 4100;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
